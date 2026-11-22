@@ -1,0 +1,13 @@
+[package]
+name = "rust-proxy-node"
+version = "0.1.0"
+edition = "2021"
+description = "Rust proxy node: SOCKS5 (RFC 1928, no-auth + username/password, CONNECT, UDP ASSOCIATE) and HTTP CONNECT (RFC 7231)"
+license = "MIT OR Apache-2.0"
+
+[dependencies]
+# Intentionally zero external dependencies: only std.
+# This makes the build reproducible offline and avoids crates.io access.
+
+[profile.release]
+opt-level = 3
